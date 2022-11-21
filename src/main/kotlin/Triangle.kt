@@ -1,10 +1,10 @@
-class Circle (val radius: Int): Figure() {
+class Triangle (val a: Int, val b: Int, val c: Int, val h: Int): Figure() {
 
     override fun perimeter(): Float {
-        return ((2*3.14*radius).toFloat())
+        return ((a+b+c).toFloat())
     }
 
     override fun area(): Float {
-        return ((3.14*radius*radius).toFloat())
+        return ((a*0.5*h).toFloat())
     }
 }
